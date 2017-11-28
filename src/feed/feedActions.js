@@ -45,7 +45,7 @@ export const getFeedContent = ({ sortBy, category, limit }) => (
   dispatch(
     getFeedContentWithoutAPI({
       sortBy: sortBy || 'trending',
-      category: category || 'cannabis',
+      category: category || 'all',
     }),
   );
 
@@ -61,7 +61,7 @@ export const getFeedContent = ({ sortBy, category, limit }) => (
       dispatch(
         getFeedContentSuccess({
           sortBy: sortBy || 'trending',
-          category: category || 'cannabis',
+          category: category || 'all',
           postsData,
           limit,
         }),
@@ -126,7 +126,7 @@ export const getMoreFeedContent = ({ sortBy, category, limit }) => (
   dispatch(
     getMoreFeedContentWithoutAPI({
       sortBy: sortBy || 'trending',
-      category: category || 'cannabis',
+      category: category || 'all',
     }),
   );
 
@@ -157,7 +157,7 @@ export const getMoreFeedContent = ({ sortBy, category, limit }) => (
       return dispatch(
         getMoreFeedContentSuccess({
           sortBy: sortBy || 'trending',
-          category: category || 'cannabis',
+          category: category || 'all',
           postsData,
           limit,
         }),
