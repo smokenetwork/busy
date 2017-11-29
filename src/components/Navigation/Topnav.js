@@ -123,7 +123,7 @@ class Topnav extends React.Component {
         <div className="topnav-layout container">
           <div className="left">
             <Link className="Topnav__brand" to="/">
-                <img src={require('./favicon.png')} width="40" height="40"/>
+                <img src={require('./favicon.png')} width={40} height={40}/>
             </Link>
             <span className="Topnav__version">beta</span>
           </div>
