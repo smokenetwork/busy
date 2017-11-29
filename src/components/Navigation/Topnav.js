@@ -124,9 +124,7 @@ class Topnav extends React.Component {
         <div className="topnav-layout container">
           <div className="left">
             <Link className="Topnav__brand" to="/">
-              <div className="logo">
                 <img src={logo} width="100" height="50" />
-              </div>
             </Link>
             <span className="Topnav__version">beta</span>
           </div>
