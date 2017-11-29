@@ -168,7 +168,7 @@ export default class Buttons extends React.Component {
               <Icon type="loading" />
             ) : (
               <i
-                className={`iconfont icon-${this.state.sliderVisible ? 'right' : 'smile'}`}
+                className={`iconfont icon-${this.state.sliderVisible ? 'right' : 'smile_fill'}`}
               />
             )}
           </a>
