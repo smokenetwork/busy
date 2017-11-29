@@ -5,7 +5,7 @@ import './SidebarBlock.less';
 const SignUp = () =>
   (<div className="SidebarBlock">
     <h3 className="SidebarBlock__title">
-      <FormattedMessage id="new_to_busy" defaultMessage="New to Smoke.Network?" />
+      <FormattedMessage id="new_to_smoke" defaultMessage="New to SmokeNetwork?" />
     </h3>
     <a target="_blank" rel="noopener noreferrer" href="https://steemit.com/pick_account">
       <button className="SidebarBlock__button">
