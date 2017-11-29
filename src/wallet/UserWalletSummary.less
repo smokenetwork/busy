@@ -2,9 +2,10 @@
 @import (reference) "../styles/modules/variables.less";
 
 .UserWalletSummary {
-  border: 1px solid @white-gainsboro;
+  background: @grey-nightRider;
+  border: 1px solid @grey-nightRider;
   border-radius: @border-radius-base;
-  background-color: @white;
+  box-shadow: 0 3px 15px rgba(0,0,0,.2);
 
   &__item {
     display: flex;
@@ -20,20 +21,20 @@
   }
 
   &__icon {
-    color: @blue-baliHai;
+    color: @green;
     margin-right: 10px;
   }
 
   &__label {
     align-items: center;
-    color: @black;
+    color: @white;
     display: flex;
     font-size: 18px;
   }
 
   &__value {
     align-items: center;
-    color: @purple;
+    color: @greeb;
     display: flex;
     font-size: 18px;
     font-weight: bold;
@@ -43,7 +44,7 @@
 
   &__reward {
     &:after {
-      color: @blue-botticelli;
+      color: @green;
       content: ' - ';
     }
 
