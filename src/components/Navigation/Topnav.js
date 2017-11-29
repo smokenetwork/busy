@@ -8,7 +8,6 @@ import classNames from 'classnames';
 import Avatar from '../Avatar';
 import PopoverMenu, { PopoverMenuItem } from '../PopoverMenu/PopoverMenu';
 import './Topnav.less';
-import logo from './favicon.png';
 
 class Topnav extends React.Component {
   static propTypes = {
@@ -124,7 +123,7 @@ class Topnav extends React.Component {
         <div className="topnav-layout container">
           <div className="left">
             <Link className="Topnav__brand" to="/">
-                <img src={logo} width="100" height="50" />
+                <img src={require('./favicon.png')} />
             </Link>
             <span className="Topnav__version">beta</span>
           </div>
