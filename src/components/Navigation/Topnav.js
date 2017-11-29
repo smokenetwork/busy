@@ -8,7 +8,7 @@ import classNames from 'classnames';
 import Avatar from '../Avatar';
 import PopoverMenu, { PopoverMenuItem } from '../PopoverMenu/PopoverMenu';
 import './Topnav.less';
-import logo from '../../../../assets/favicon.png';
+import logo from './favicon.png';
 
 class Topnav extends React.Component {
   static propTypes = {
