@@ -8,6 +8,7 @@ import SteemConnect from '../../steemConnectAPI';
 import Avatar from '../Avatar';
 import PopoverMenu, { PopoverMenuItem } from '../PopoverMenu/PopoverMenu';
 import './Topnav.less';
+import logo from '../../../../assets/favicon.png';
 
 @injectIntl
 @withRouter
@@ -127,7 +128,9 @@ class Topnav extends React.Component {
         <div className="topnav-layout container">
           <div className="left">
             <Link className="Topnav__brand" to="/">
-              busy
+              <div className="logo">
+                <img src={logo} width="100" height="50" />
+              </div>
             </Link>
             <span className="Topnav__version">beta</span>
           </div>
