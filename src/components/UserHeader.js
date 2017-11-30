@@ -96,11 +96,16 @@ const UserHeader = ({
       </div>
       <div className="UserHeader__smoke">
         <div className="UserHeader__smoke-cta">
-            <FormattedMessage id="smoke_cta" defaultMessage="{handle} is just one of the creators that make Smoke.Network epic!" />
+            {handle} is just one of the creators that make Smoke.Network epic!
         </div>
         <div className="UserHeader__smoke-cta">
-            <FormattedMessage id="smoke_grow" defaultMessage="If you would like to see Smoke.Network grow consider delegating some of your Steem Power." />
+            If you would like to see Smoke.Network grow consider delegating some of your Steem Power.
         </div>
+        <a target="_blank" rel="noopener noreferrer" href="https://smoke.network/@smokenetwork">
+          <button className="SidebarBlock__button">
+            <FormattedMessage id="learnmore" defaultMessage="Learn More" />
+          </button>
+       </a>
       </div>
     </div>
   </div>
