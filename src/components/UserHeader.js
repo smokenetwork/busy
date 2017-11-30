@@ -94,6 +94,9 @@ const UserHeader = ({
           </div>
         </div>
       </div>
+      <div className="UserHeader__smoke">
+        Hey @{handle}, are you enjoying Smoke.Network?
+      </div>
     </div>
   </div>
 );
