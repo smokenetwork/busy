@@ -95,7 +95,12 @@ const UserHeader = ({
         </div>
       </div>
       <div className="UserHeader__smoke">
-        Hey @{handle}, are you enjoying Smoke.Network?
+        <div className="UserHeader__smoke-cta">
+            <FormattedMessage id="smoke_cta" defaultMessage="{handle} is just one of the creators that make Smoke.Network epic!" />
+        </div>
+        <div className="UserHeader__smoke-cta">
+            <FormattedMessage id="smoke_grow" defaultMessage="If you would like to see Smoke.Network grow consider delegating some of your Steem Power." />
+        </div>
       </div>
     </div>
   </div>
