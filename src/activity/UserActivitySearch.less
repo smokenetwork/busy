@@ -1,10 +1,11 @@
 @import (reference) "../styles/custom.less";
 
 .UserActivitySearch {
-  background-color: @white;
+  background-color: @grey-mortar;
   border-radius: 4px;
-  border: 1px solid @white-gainsboro;
-  color: @purple;
+  border: 1px solid @grey-mortar;
+  box-shadow: 0 3px 15px rgba(0,0,0,.2);
+  color: @green;
   margin-bottom: 1em;
   padding: 8px 16px 16px;
   text-align: left;
@@ -12,12 +13,12 @@
   overflow: auto;
 
   &__title {
-    color: @blue-botticelli;
+    color: @highlights;
     font-size: 18px;
     font-weight: 500;
 
     &__icon {
-      color: @purple;
+      color: @green;
       margin-right: 5px;
       vertical-align: -2px;
     }
@@ -25,7 +26,7 @@
 
   &__filters {
     &__title {
-      color: @black;
+      color: @white;
       cursor: pointer;
       display: flex;
       flex-direction: row;
@@ -34,7 +35,7 @@
       align-items: center;
 
       &__icon {
-        color: @blue-botticelli;
+        color: @highlights;
         margin-left: auto;
 
         .iconfont {
@@ -45,7 +46,7 @@
 
     &__content {
       text-transform: capitalize;
-      color: @grey-mortar;
+      color: @white-darker;
       font-weight: 500;
     }
 
