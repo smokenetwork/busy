@@ -98,10 +98,10 @@ const UserHeader = ({
         <div className="UserHeader__smoke-cta">
             {handle} is just one of the creators that make Smoke.Network epic!
         </div>
-        <div className="UserHeader__smoke-cta">
+        <div className="UserHeader__smoke-about">
             If you would like to see Smoke.Network grow consider delegating some of your Steem Power.
         </div>
-        <a target="_blank" rel="noopener noreferrer" href="https://smoke.network/@smokenetwork">
+        <a target="_blank" rel="noopener noreferrer" href="https://smoke.network/@smokenetwork/delegate-sp-to-stoners-through-smokenetwork-beta">
           <button className="SidebarBlock__button">
             <FormattedMessage id="learnmore" defaultMessage="Learn More" />
           </button>
