@@ -147,7 +147,7 @@ class PostContent extends React.Component {
     } = this.props;
 
     const postMetaData = jsonParse(content.json_metadata);
-    const busyHost = global.postOrigin || 'https://busy.org';
+    const busyHost = global.postOrigin || 'https://smoke.network';
     let canonicalHost = busyHost;
     if (postMetaData.app && postMetaData.app.indexOf('steemit') === 0) {
       canonicalHost = 'https://steemit.com';
@@ -172,7 +172,7 @@ class PostContent extends React.Component {
     const image = postMetaImage || getImage(`@${author}`);
     const canonicalUrl = `${canonicalHost}${content.url}`;
     const url = `${busyHost}${content.url}`;
-    const metaTitle = `${title} - Busy`;
+    const metaTitle = `${title} - Smoke.Network`;
 
     return (
       <div>
@@ -185,11 +185,11 @@ class PostContent extends React.Component {
           <meta property="og:url" content={url} />
           <meta property="og:image" content={image} />
           <meta property="og:description" content={desc} />
-          <meta property="og:site_name" content="Busy" />
+          <meta property="og:site_name" content="Smoke.Network" />
           <meta property="article:tag" content={category} />
           <meta property="article:published_time" content={created} />
           <meta property="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
-          <meta property="twitter:site" content={'@steemit'} />
+          <meta property="twitter:site" content={'@smokenetwork'} />
           <meta property="twitter:title" content={metaTitle} />
           <meta property="twitter:description" content={desc} />
           <meta
