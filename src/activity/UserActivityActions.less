@@ -2,9 +2,10 @@
 @import (reference) "../styles/modules/variables.less";
 
 .UserActivityActions {
-  background-color: @white;
-  border: 1px solid @white-gainsboro;
-  border-radius: @border-radius-base;
+  background-color: @grey-mortar;
+  border: 1px solid @grey-mortar;
+  border-radius: 4px;
+  box-shadow: 0 3px 15px rgba(0,0,0,.2);
 
   &:empty {
     display: none;
@@ -17,7 +18,7 @@
   }
 
   &__action {
-    color: @grey-nightRider;
+    color: @white;
     display: flex;
     padding: 10px 0;
     margin: 0 15px;
@@ -41,8 +42,8 @@
 
     &__container {
       align-items: center;
-      color: @blue-heather;
-      background-color: @blue-solitude;
+      color: @highlights;
+      background-color: @highlights;
       border-radius: 4px;
       display: flex;
       height: 40px;
@@ -72,7 +73,7 @@
   }
 
   &__contents {
-    background: @white;
+    background: @grey-nightRider;
     border-collapse: separate;
     border-radius: 2px;
     border-spacing: 0;
@@ -102,7 +103,7 @@
     }
 
     &__label {
-      background: @blue-solitude;
+      background: @highlights;
       border-right: @table-border;
       border-top: @table-border;
       font-weight: bold;
@@ -113,7 +114,7 @@
   }
 
   &__timestamp {
-    color: @blue-botticelli;
+    color: @green;
     font-size: 14px;
   }
 
