@@ -19,14 +19,14 @@ class ModalSignUp extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.toggleModal}>
+        <button onClick={this.toggleModal} className="Modal__button">
           Learn More
         </button>
 
         <Modal show={this.state.isOpen}
           onClose={this.toggleModal}>
             <a target="_blank" rel="noopener noreferrer" href="https://steemit.com/pick_account">
-              <button>
+              <button className="Modal__button">
                 <FormattedMessage id="signup" defaultMessage="Sign up" />
               </button>
             </a>
