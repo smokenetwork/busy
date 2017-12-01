@@ -26,15 +26,27 @@ class ModalSignUp extends Component {
         <Modal show={this.state.isOpen}
           onClose={this.toggleModal}>
             <div>
-              <h3>Welcome to Smoke.Network Alpha</h3>
-              <p>Smoke.Network Alpha runs on Steem blockchain allowing our authors to earn real cryptocurrency that can be traded for bitcoin and other altcoins.</p>
-              <p>Due to the nature of the steem blockchain you must first sign up for an account on Steemit.com, the official application of the Steem blockchain.
-                 <br />
-                 Once you have a Steem account you can sign in here and enjoy all the benefits Smoke.Network has to provide such as a vibrant community of stoners, a boosting bot that upvotes any posts posted from out platform using the #smokenetwork tag.</p> 
+              <h1>Welcome to Smoke.Network Alpha</h1>
+              <p className="Modal__about-bold">Smoke.Network Alpha runs on the Steem blockchain allowing our authors to earn real cryptocurrency that can be traded for bitcoin and other altcoins.</p>
+              <p className="Modal__about">
+                  Steem is a blockchain-based rewards platform for publishers to monetize content and grow communities like ours. Steem has it's own smart token called STEEM. These tokens are distributed to content creators and curators daily as rewards, based on community voting. Smoke.Network is one of the first niche based front ends that plugs directly into the Steem chain allowing our authors to earn Steem for their contributions to Smoke.Network.   
+                  <br />     
+                  Due to the nature of the Steem blockchain you must first sign up for an account on Steemit.com, the official application of the Steem blockchain.
+                  <br />
+                  Once you have a Steem account you can sign in here and enjoy all the benefits Smoke.Network has to offer such as: 
+                  <ol>
+                  <li>Boosting bot that upvotes any posts posted from our platform using the #smokenetwork tag.</li>
+                  <li>A vibrant community of stoners</li>
+                  <li>Weekly contests</li>
+                  <li>Active Development</li>
+                  <li>Good Company</li>
+                  <li>A place to earn cryptocurrency writing about what you love!</li>
+                  </ol>
+              </p> 
             </div>
             <a target="_blank" rel="noopener noreferrer" href="https://steemit.com/pick_account">
               <button className="Modal__button">
-                <FormattedMessage id="signup" defaultMessage="Sign up" />
+                <FormattedMessage id="signup" defaultMessage="Sign up on Steemit!" />
               </button>
             </a>
         </Modal>
