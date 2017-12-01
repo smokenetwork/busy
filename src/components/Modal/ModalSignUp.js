@@ -35,4 +35,4 @@ class ModalSignUp extends Component {
   }
 }
 
-export default ModalApp;
+export default ModalSignUp;
