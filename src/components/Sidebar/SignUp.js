@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import './SidebarBlock.less';
-import ModalApp from '../Modal/ModalApp'
+import ModalSignUp from '../Modal/ModalSignUp'
 
 const SignUp = () =>
   (<div className="SidebarBlock">
