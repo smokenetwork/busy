@@ -22,7 +22,7 @@ const SignUp = () =>
     </div>
     <div className="Step4">
       <i className="iconfont icon-success_fill SidebarBlock__steps" />
-      <FormattedMessage id="step_4" defaultMessage="Login to Smoke.Network" />
+      <FormattedMessage id="step_4" defaultMessage="Log in" />
     </div>
     
     <ModalSignUp />
