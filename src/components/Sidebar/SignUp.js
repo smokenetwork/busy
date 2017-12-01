@@ -8,12 +8,8 @@ const SignUp = () =>
     <h3 className="SidebarBlock__title">
       <FormattedMessage id="new_to_smoke" defaultMessage="New to SmokeNetwork?" />
     </h3>
-    <ModalApp />
-      <a target="_blank" rel="noopener noreferrer" href="https://steemit.com/pick_account">
-        <button className="SidebarBlock__button">
-          <FormattedMessage id="signup" defaultMessage="Sign up" />
-        </button>
-      </a>
+    <ModalSignUp className="SidebarBlock__button" />
+      
   </div>);
 
 export default SignUp;
