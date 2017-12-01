@@ -19,7 +19,7 @@ class ModalSignUp extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.toggleModal} className="Modal__button">
+        <button onClick={this.toggleModal}>
           Learn More
         </button>
 
