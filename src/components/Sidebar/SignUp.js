@@ -8,6 +8,12 @@ const SignUp = () =>
     <h3 className="SidebarBlock__title">
       <FormattedMessage id="new_to_smoke" defaultMessage="New to SmokeNetwork?" />
     </h3>
+    <div>
+      <i className="iconfont icon-group InterestingPeople__icon" />
+      </i>
+      Test
+    </div>
+    
     <ModalSignUp />
       
   </div>);
