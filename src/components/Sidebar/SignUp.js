@@ -10,7 +10,7 @@ const SignUp = () =>
     </h3>
     <div>
       <i className="iconfont icon-group InterestingPeople__icon" />
-      </i>
+      
       Test
     </div>
     
