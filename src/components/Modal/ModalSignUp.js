@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Modal from './Modal';
 import { FormattedMessage } from 'react-intl';
+import './ModalSignUp.less';
 
 class ModalSignUp extends Component {
   constructor(props) {
