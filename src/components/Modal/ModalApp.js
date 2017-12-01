@@ -23,7 +23,7 @@ class ModalApp extends Component {
 
         <Modal show={this.state.isOpen}
           onClose={this.toggleModal}>
-          {props.children}
+          `some content here`
         </Modal>
       </div>
     );
