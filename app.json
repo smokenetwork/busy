@@ -1,5 +1,5 @@
 {
-  "name": "smoke-busy",
+  "name": "busy",
   "scripts": {},
   "env": {
     "NEW_RELIC_LICENSE_KEY": {
