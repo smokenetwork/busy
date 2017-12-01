@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import Topics from '../../components/Sidebar/Topics';
 import Sidenav from '../../components/Navigation/Sidenav';
 
-const Navigation = ({ authenticatedUser, trendingTopicsLoading, trendingTopics }) => (
+const Navigation = ({ trendingTopicsLoading, trendingTopics }) => (
   <div>
     <Sidenav />
     <Topics loading={trendingTopicsLoading} topics={trendingTopics} />
