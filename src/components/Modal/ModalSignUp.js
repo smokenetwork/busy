@@ -20,7 +20,7 @@ class ModalSignUp extends Component {
     return (
       <div>
         <button onClick={this.toggleModal} className="Modal__button">
-          Learn More
+          Sign up
         </button>
 
         <Modal show={this.state.isOpen}
