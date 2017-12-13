@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
 
 import Topics from '../../components/Sidebar/Topics';
 import Sidenav from '../../components/Navigation/Sidenav';
@@ -17,9 +16,19 @@ Navigation.propTypes = {
   trendingTopics: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
-export default connect(
-  state => ({
-    trendingTopicsLoading: false,
-    trendingTopics: ["smokenetwork", "cannabis", "marijuana", "medicalcannabis", "cannabisnews", "smoke", "vape", "edibles", "legalize"],
-  }),
-)(Navigation);
+Navigation.defaultProps = {
+  trendingTopicsLoading: false,
+  trendingTopics: [
+    'smokenetwork',
+    'cannabis',
+    'marijuana',
+    'medicalcannabis',
+    'cannabisnews',
+    'smoke',
+    'vape',
+    'edibles',
+    'legalize',
+  ],
+};
+
+export default Navigation;
