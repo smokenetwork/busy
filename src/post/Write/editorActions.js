@@ -156,38 +156,38 @@ export function createPost(postData) {
     dispatch({
       type: CREATE_POST,
       payload: {
-        promise: getPermLink.then(permlink => {
+        promise: getPermLink.then((permlink) => {
 
-            const newBody = isUpdating ? getBodyPatchIfSmaller(postData.originalBody, body) : body + `\n\n<hr/><p>This was posted from <a href="https://smoke.network">Smoke.Network</a></p>`;
+          const newBody = isUpdating ? getBodyPatchIfSmaller(postData.originalBody, body) : body + `\n\n<hr/><p>This was posted from <a href="https://smoke.network">Smoke.Network</a></p>`;
 
-            broadcastComment(
-              parentAuthor,
-              parentPermlink,
-              author,
-              title,
-              newBody,
-              jsonMetadata,
-              !isUpdating && reward,
-              !isUpdating && upvote,
-              permlink,
-            ).then((result) => {
-              if (draftId) {
-                dispatch(deleteDraft(draftId));
-                dispatch(addEditedPost(permlink));
-              }
-              dispatch(push(`/${parentPermlink}/@${author}/${permlink}`));
+          broadcastComment(
+            parentAuthor,
+            parentPermlink,
+            author,
+            title,
+            newBody,
+            jsonMetadata,
+            !isUpdating && reward,
+            !isUpdating && upvote,
+            permlink,
+          ).then((result) => {
+            if (draftId) {
+              dispatch(deleteDraft(draftId));
+              dispatch(addEditedPost(permlink));
+            }
+            dispatch(push(`/${parentPermlink}/@${author}/${permlink}`));
 
-              if (window.analytics) {
-                window.analytics.track('Post', {
-                  category: 'post',
-                  label: 'submit',
-                  value: 10,
-                });
-              }
+            if (window.analytics) {
+              window.analytics.track('Post', {
+                category: 'post',
+                label: 'submit',
+                value: 10,
+              });
+            }
 
-              return result;
-            })
-          }
+            return result;
+          });
+        },
         ),
       },
     });
