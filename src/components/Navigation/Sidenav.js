@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import { getAuthenticatedUser } from '../../reducers';
 import './Sidenav.less';
 
+
 const isNews = (match, location) => location.pathname.match(/trending/);
 const isWallet = (match, location) => location.pathname.match(/wallet/);
 const isReplies = (match, location) => location.pathname.match(/replies/);
@@ -50,7 +51,19 @@ const Sidenav = ({ username }) => {
     )
   } else {
     return (
-      <div />
+      <div>
+        <div className="Nav__smoke-cta">
+            Smoke, Get Paid, Repeat.
+        </div>
+        <div className="Nav__smoke-about">
+            Want to help us grow?
+        </div>
+        <a target="_blank" rel="noopener noreferrer" href="https://about.smoke.network">
+          <button className="Nav__button">
+            <FormattedMessage id="learnmore" defaultMessage="Learn More" />
+          </button>
+       </a>
+      </div>
     )
   }
 }
