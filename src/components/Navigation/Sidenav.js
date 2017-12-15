@@ -50,9 +50,7 @@ const Sidenav = ({ username }) => {
     )
   } else {
     return (
-      <div>
-        <iframe allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" src="https://fast.wistia.com/embed/iframe/gvx5rvmvc9" width="480" height="270"></iframe>
-      </div>
+      <div />
     )
   }
 }
