@@ -253,7 +253,7 @@ export default class Settings extends React.Component {
                   <p>
                     <FormattedMessage
                       id="language_info"
-                      defaultMessage="What language do you want to use on Busy?"
+                      defaultMessage="What language do you want to use on Smoke.Network?"
                     />
                   </p>
                   <Select
