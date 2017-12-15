@@ -50,18 +50,8 @@ const Sidenav = ({ username }) => {
     )
   } else {
     return (
-      <div className="SidebarBlock">
-        <h3 className="SidebarBlock__title">
-          <FormattedMessage id="new_to_smoke" defaultMessage="What is Smoke.Network?" />
-        </h3>
-        <div className="Steps">
-          <FormattedMessage id="abouthome" defaultMessage="We are the first cannabis community to combine blockchain technology with social networking to build a platform that rewards users for posting and curating as well as rewards commitment to the network." />
-        </div>
-        <a target="_blank" rel="noopener noreferrer" href="https://about.smoke.network">
-          <button className="SidebarBlock__button">
-            <FormattedMessage id="learnmore" defaultMessage="Learn more" />
-          </button>
-        </a>
+      <div>
+        <iframe allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" src="https://fast.wistia.com/embed/iframe/gvx5rvmvc9" width="480" height="270"></iframe>
       </div>
     )
   }
