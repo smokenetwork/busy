@@ -40,7 +40,7 @@ class Topnav extends React.Component {
           |
           </Menu.Item>
           <Menu.Item key="login">
-            <a href="https://v2.steemconnect.com/oauth2/authorize?client_id=smoke-busy&redirect_uri=https%3A%2F%2Fsmokenetwork.herokuapp.com%2Fcallback&scope=">
+            <a href="https://v2.steemconnect.com/oauth2/authorize?client_id=smoke-busy&redirect_uri=https%3A%2F%2Fbeta.smoke.network%2Fcallback&scope=">
               <FormattedMessage id="login" defaultMessage="Log in" />
             </a>
           </Menu.Item>
