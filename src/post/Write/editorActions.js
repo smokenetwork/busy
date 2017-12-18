@@ -158,7 +158,7 @@ export function createPost(postData) {
       payload: {
         promise: getPermLink.then((permlink) => {
 
-          const newBody = isUpdating ? getBodyPatchIfSmaller(postData.originalBody, body) : body + `\n\n<hr/><p>This was posted from <a href="https://smoke.network">Smoke.Network</a></p>`;
+          const newBody = isUpdating ? getBodyPatchIfSmaller(postData.originalBody, body) : body + `\n\n<hr/><p>This was posted from the <a href="https://beta.smoke.network">Smoke.Network Beta</a></p>`;
 
           broadcastComment(
             parentAuthor,
