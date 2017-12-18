@@ -58,7 +58,7 @@ const Sidenav = ({ username }) => {
         <div className="Nav__smoke-about">
             Want to help us grow?
         </div>
-        <a target="_blank" rel="noopener noreferrer" href="https://about.smoke.network">
+        <a target="_blank" rel="noopener noreferrer" href="https://smoke.network">
           <button className="Nav__button">
             <FormattedMessage id="learnmore" defaultMessage="Learn More" />
           </button>
