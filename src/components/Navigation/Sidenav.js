@@ -57,7 +57,7 @@ const Sidenav = ({ username }) => {
         <div className="Steps">
           <FormattedMessage id="abouthome" defaultMessage="We are the first cannabis community to combine blockchain technology with social networking to build a platform that rewards users for posting and curating as well as rewards commitment to the network." />
         </div>
-        <a target="_blank" rel="noopener noreferrer" href="https://about.smoke.network">
+        <a target="_blank" rel="noopener noreferrer" href="https://smoke.network">
           <button className="SidebarBlock__button">
             <FormattedMessage id="learnmore" defaultMessage="Learn more" />
           </button>
