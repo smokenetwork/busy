@@ -101,7 +101,7 @@ const UserHeader = ({
         <div className="UserHeader__smoke-about">
             Want to help us grow?
         </div>
-        <a target="_blank" rel="noopener noreferrer" href="https://about.smoke.network">
+        <a target="_blank" rel="noopener noreferrer" href="https://smoke.network">
           <button className="SidebarBlock__button">
             <FormattedMessage id="learnmore" defaultMessage="Learn More" />
           </button>
